@@ -10,6 +10,8 @@ namespace ContrarianHW2
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Write any sentence beginning with 'I love,' 'I have,' or 'I want.'");
+            string userInput = Console.ReadLine();
         }
     }
 }
