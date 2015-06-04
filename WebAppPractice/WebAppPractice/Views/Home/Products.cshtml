@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Products";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.Partial("_FeaturedProduct")
+
+@Html.Action("GetAd", "BannerAd")

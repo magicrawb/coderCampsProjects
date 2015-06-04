@@ -1,0 +1,23 @@
+﻿@model Day7HTMLHelpers.Models.Product
+@using Day7HTMLHelpers.Helpers
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<h2>Index</h2>
+
+@using (Html.BeginForm())
+{
+
+    
+    <p>This year, the company made @MyHelpers.FormatPrice(756413.348m) in revenue.</p>
+    <p>Last year, the company lost @MyHelpers.FormatPrice(-6794.24m)</p>
+    
+    @Html.Image("http://laughingsquid.com/wp-content/uploads/space_needle_1.jpg")
+    
+    @Html.ShowPrice(m => m.Price)
+    
+    <input type="submit" value="Add Product" />
+}

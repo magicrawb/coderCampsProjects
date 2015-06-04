@@ -8,24 +8,24 @@ namespace CatCounter
 {
     public class CatCount
     {
-        public int Counter { get; set; }
 
         public static int CatCountMethod(string s)
         {
+            //strips punctuation and splits to array by spaces
             string[] cats = s.StripPunctuation().Split(' ');
-            CatCount counter = new CatCount();
-            counter.Counter = 0;
+            int counter = 0;
 
+            //runs through the array and counts each cat
             foreach (string word in cats)
             {
                 string w = word.ToLower();
                 if (w == "cat")
                 {
-                    counter.Counter++;
+                    counter++;
                 }
                 if (w == "cats")
                 {
-                    counter.Counter++;
+                    counter++;
                 }
                 else
                 {
@@ -34,8 +34,7 @@ namespace CatCounter
 
             }
 
-            return counter.Counter;
-
+            return counter;
         }
     }
 

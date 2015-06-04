@@ -10,7 +10,7 @@ namespace CatCounter
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Copy and Paste ANY block of text - I'll tell you how many cats it contains!");
+            Console.WriteLine("Type a story and use the word cat - I'll tell you how many cats it contains!");
             String catString = Console.ReadLine();
             Console.WriteLine("The word 'Cat' appears {0} times!", CatCount.CatCountMethod(catString));
 
